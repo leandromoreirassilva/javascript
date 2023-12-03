@@ -14,9 +14,18 @@
     <h1>Olá, Mundo!</h1>
     <p>já me livrei da maldicão</p>
     <script>
-        window.alert ('Minha primeira Mensagem'); 
-        window.confirm("Está gostando do JS ?")
-        window.prompt("Qual o seu nome? ")
+        //window.alert ('Minha primeira Mensagem'); 
+        //window.confirm("Está gostando do JS ?")
+        var n1 = Number.parseInt(window.prompt("Digite um numero para n1: ")) // converte string pra numer inteiro 
+        var n2 = Number.parseInt(window.prompt("Digite um numero para n2: "))
+        var soma = n1+n2 
+
+        window.alert (`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+        var nome = window.prompt("Qual o seu nome? ")
+        window.alert ("Bem vindo " + nome + " !")
+
+        
     </script>
 </body>
 </html>
