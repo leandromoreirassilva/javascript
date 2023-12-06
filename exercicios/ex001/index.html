@@ -18,13 +18,21 @@
         }
     </style>
 </head>
-<body>
+<body onload="carregar()">
+
     <h1>Olá, Mundo!</h1>
     <p>já me livrei da maldicão</p>
+
+    <p id="para">Some text here</p>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+    <br>
+
     <div id="area">
         Interajá aqui 
     </div>
 
+    <!-- 
     <script>
         var a = window.document.getElementById('area')
         a.addEventListener("click", clicar)
@@ -43,8 +51,7 @@
             a.style.background = 'green'
         }
     </script>
-
-
+    -->
 
     <!-- 
     <script> 
@@ -64,6 +71,6 @@
     </script>
 
     -->
-
+    <script src="javascript/ex001.js"> </script> <!--Esta é aligacao com a folha de js.-->
 </body>
 </html>
