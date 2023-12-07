@@ -1,6 +1,10 @@
 
-function msg (vbtn) {
-    alert(`Voce clicou no ${vbtn} botão !`)
+function msg () {
+    let numero = prompt('Digite um numero inteiro qualquer:')
+    let antecessor = Number(numero) - 1
+    let sucessor = Number(numero) + 1
+    // \n quebra linha dentro de alert 
+    alert (`Antes de ${numero}, temos o número ${antecessor}. \nDepois de ${numero}, temos o número ${sucessor}.`)  
 }
 
 

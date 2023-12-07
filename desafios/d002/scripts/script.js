@@ -1,6 +1,8 @@
 
-function msg (vbtn) {
-    alert(`Voce clicou no ${vbtn} botão !`)
+function msg () {
+    let nome = prompt('Digite seu nome: ')
+    let idade = prompt(`Olá, ${nome}! Quantos anos voce tem ?`)
+    alert (`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)   
 }
 
 

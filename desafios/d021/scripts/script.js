@@ -1,11 +1,4 @@
 
-function msg (vbtn) {
-    alert(`Voce clicou no ${vbtn} botão !`)
-}
-
-
-
-
 function contagem() {
     let minc = document.getElementById('imin')
     let maxc = document.getElementById('ifim')
