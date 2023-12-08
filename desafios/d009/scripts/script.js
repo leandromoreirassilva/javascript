@@ -47,6 +47,7 @@ function msg() {
     msgTxt [2] = `Com o aumento de ${porcentagem}%, o valor vai aumentar ${valoraumento} no próximo mes.`
     msgTxt [3] = `E a partir dai, ${nomefuncionario} vai passar a ganhar ${novosalario} .`
 
+    //Cria 1 paragrafo para cada mensagem dentro da <div>
     for (const elemento of msgTxt) {
         const paragen = document.createElement('p') // cria um paragrafo 
         const pagagenTexto = document.createTextNode(elemento)
