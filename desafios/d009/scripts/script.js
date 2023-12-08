@@ -39,14 +39,19 @@ function msg() {
     novosalario = formatreal(novosalario)  
     salario = formatreal(salario)  
 
-
     let msg = document.getElementById('resultadomensagem')
 
-    msg.innerText = (
-        `${nomefuncionario} recebeu um aumento salarial !!! \n` + 
-        `O Salário atual era ${salario} . \n` + 
-        `Com o aumento de ${porcentagem}%, o valor vai aumentar ${valoraumento} no próximo mes. \n` +
-        `E a partir dai, ${nomefuncionario} vai passar a ganhar ${novosalario} .`  
-    )
+    let msgTxt = []
+    msgTxt [0] = `${nomefuncionario} recebeu um aumento salarial !!!`
+    msgTxt [1] = `O Salário atual era ${salario} .`
+    msgTxt [2] = `Com o aumento de ${porcentagem}%, o valor vai aumentar ${valoraumento} no próximo mes.`
+    msgTxt [3] = `E a partir dai, ${nomefuncionario} vai passar a ganhar ${novosalario} .`
+
+    for (const elemento of msgTxt) {
+        const paragen = document.createElement('p') // cria um paragrafo 
+        const pagagenTexto = document.createTextNode(elemento)
+        paragen.appendChild(pagagenTexto)
+        msg.appendChild(paragen)
+    } 
 
 }

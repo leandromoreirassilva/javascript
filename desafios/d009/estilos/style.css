@@ -50,3 +50,7 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+div#resultadomensagem > p {
+    border: 1px solid blue;
+}
