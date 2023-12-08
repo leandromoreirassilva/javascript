@@ -37,23 +37,15 @@ function func01() {
     msg.innerHTML = ""
 
     let msgTxt = []
-/*
-    msgTxt[0] = `Resolvendo Baskara:`
-    msgTxt[1] = `A equacao atua é ${valora}x2 + ${valorb}x + ${valorc} = 0.`
-    msgTxt[2] = `O Calculo sera realizado D = ${valorb}2 - 4 . ${valora} . ${valorc}`
-    msgTxt[3] = `O valor calculado foi D = ${resDelta}.`
-*/
-
     msgTxt[0] = `<strong>Resolvendo Baskara:</strong>`
     msgTxt[1] = `A equacao atua é <strong>${valora}x<sup>2</sup> + ${valorb}x + ${valorc} = 0</strong>.`
     msgTxt[2] = `O Calculo sera realizado <strong>&#916 = ${valorb}<sup>2</sup> - 4 . ${valora} . ${valorc}</strong>`
     msgTxt[3] = `O valor calculado foi <mark><strong>&#916 = ${resDelta}</strong></mark>.`
 
-
     //Cria 1 paragrafo para cada mensagem dentro da <div>
     for (const elemento of msgTxt) {
-        const paragen = document.createElement('p') // cria um paragrafo 
-        paragen.innerHTML = elemento    //insere no paragrafro o texto em formato html 
+        const paragen = document.createElement('p')     // cria um paragrafo 
+        paragen.innerHTML = elemento                    //insere no paragrafro o texto em formato html 
         msg.appendChild(paragen)    
     }
 
